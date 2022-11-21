@@ -1,0 +1,46 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/aidan/.oh-my-zsh"
+
+# Path to yarn
+export PATH="$PATH:$(yarn global bin)"
+
+# theme
+ZSH_THEME="eastwood"
+
+# plugins
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+# GPG Signing
+export GPG_TTY=$(tty)
+
+# aliases
+alias zshconfig="nvim $HOME/.zshrc"
+alias ohmyzsh="nvim $HOME/.oh-my-zsh"
+alias c="clear"
+alias gcl="git clone"
+alias push="git push origin"
+alias pull="git pull origin"
+alias nb="git checkout -b"
+alias switch="git checkout"
+alias del="git branch -D"
+alias fetch="git fetch --prune"
+alias branches="git branch -a"
+alias werk="cd $HOME/werk"
+alias ws="cd $HOME/workspace"
+
+# nvim nightly
+alias nvconfig="nv $HOME/.config/nvim"
+alias nvupdate="$HOME/.config/nvim/nightly.sh"
+alias nv="$HOME/nvim-macos/bin/nvim"
+
+# pnpm
+export PNPM_HOME="/Users/aidan/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# fnm
+eval "$(fnm env --use-on-cd)"
