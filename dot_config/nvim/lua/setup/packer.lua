@@ -10,15 +10,11 @@ return require('packer').startup(
 
 		use 'kyazdani42/nvim-web-devicons' -- Icons
 
-		use 'windwp/nvim-autopairs' -- Auto brackets
-
 		use 'norcalli/nvim-colorizer.lua' -- Color highlight
 
 		use 'github/copilot.vim' -- Copilot
 
 		use 'mvllow/modes.nvim' -- Highlight line based on mode
-
-		use 'sudormrfbin/cheatsheet.nvim' -- Commands cheatsheet
 
 		use 'nat-418/boole.nvim' -- Toggle booleans, dates, etc
 
@@ -26,11 +22,7 @@ return require('packer').startup(
 
 		use 'ThePrimeagen/harpoon' -- Create and move between marks
 
-		use 'JoosepAlviste/nvim-ts-context-commentstring' -- JSX/TSX commenting
-
 		use 'maxmellon/vim-jsx-pretty' -- JSX/TSX syntax highlighting
-
-		use 'RRethy/vim-illuminate' -- Highlight and find other occurences of word under cursor
 
 		use 'lukas-reineke/indent-blankline.nvim' -- Indent guides
 
@@ -48,6 +40,8 @@ return require('packer').startup(
 
 		use 'mattkubej/jest.nvim' -- Run Jest in nvim
 
+		use 'acksld/nvim-neoclip.lua' -- Clipboard manager
+
 		use {
 			'hrsh7th/nvim-cmp',
 			'L3MON4D3/LuaSnip',
@@ -55,13 +49,18 @@ return require('packer').startup(
 			'folke/neodev.nvim',
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-nvim-lsp',
-			'onsails/lspkind-nvim',
 			'neovim/nvim-lspconfig',
 			'williamboman/mason.nvim',
 			'simrat39/rust-tools.nvim',
 			'ray-x/lsp_signature.nvim',
 			'jose-elias-alvarez/null-ls.nvim',
 			'williamboman/mason-lspconfig.nvim',
+			{
+				'onsails/lspkind-nvim',
+				config = function()
+					require('lspkind').init()
+				end
+			}
 		} -- LSP
 
 		use {
@@ -83,7 +82,11 @@ return require('packer').startup(
 			end
 		} -- Window management
 
-		use { 'numToStr/Comment.nvim',
+		use {
+			'numToStr/Comment.nvim',
+			requires = {
+				'JoosepAlviste/nvim-ts-context-commentstring' -- JSX/TSX commenting
+			},
 			config = function()
 				require('Comment').setup()
 			end
@@ -104,17 +107,28 @@ return require('packer').startup(
 			end
 		} -- Popup windows
 
+		use {
+			'kylechui/nvim-surround',
+			tag = '*',
+			config = function()
+				require('nvim-surround').setup()
+			end
+		} -- Edit surrounding brackets/quotes/tags
+
 		use { 'akinsho/git-conflict.nvim',
 			config = function()
 				require('git-conflict').setup()
 			end
 		} -- Git conflicts
 
-		use { 'windwp/nvim-ts-autotag',
+		use { 'windwp/nvim-autopairs',
+			requires = {
+				'windwp/nvim-ts-autotag' -- Auto html tags
+			},
 			config = function()
 				require('nvim-ts-autotag').setup()
 			end
-		} -- Auto html tags
+		} -- Auto brackets
 
 		use {
 			"lewis6991/gitsigns.nvim",
@@ -134,15 +148,9 @@ return require('packer').startup(
 			requires = {
 				{ 'nvim-telescope/telescope-dap.nvim' }, -- Debugging integration
 				{ 'nvim-telescope/telescope-file-browser.nvim' }, -- File browser
+				{ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- Fuzzy finding
 			},
 		}) -- File search
-
-		use {
-			'acksld/nvim-neoclip.lua',
-			requires = {
-				{ 'kkharji/sqlite.lua', module = 'sqlite' },
-			},
-		} -- Clipboard manager
 
 		use({
 			'iamcco/markdown-preview.nvim',
@@ -153,8 +161,11 @@ return require('packer').startup(
 
 		use {
 			'nvim-treesitter/nvim-treesitter',
+			requires = {
+				'p00f/nvim-ts-rainbow' -- Rainbow brackets
+			},
 			run = function()
-				require('nvim-treesitter.install').update({ with_sync = true })
+				require('nvim-treesitter.install').update({ with_sync = true })()
 			end,
 		} -- Treesitter ( syntax highlighting etc.. )
 	end

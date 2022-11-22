@@ -148,3 +148,24 @@ ba1fe823bc87e7b09500dc28ec51d35ccbd412d2 4f6d11221ee46c8dab82c1f1c7e9e497bf99a83
 4f6d11221ee46c8dab82c1f1c7e9e497bf99a832 b09216659e58d9ffe3df4876a1bc051c373d3de2 aidan-starke <starke.aidan@gmail.com> 1669004837 +1300	commit (amend): Cleanup
 b09216659e58d9ffe3df4876a1bc051c373d3de2 401b25806e9ce54cb0e62736395679b498d5e94c aidan-starke <starke.aidan@gmail.com> 1669005786 +1300	commit (amend): Cleanup
 401b25806e9ce54cb0e62736395679b498d5e94c 7107de5b8c5ab710ea757cfb39272c2f358f81a9 aidan-starke <starke.aidan@gmail.com> 1669050629 +1300	commit (amend): Cleanup
+7107de5b8c5ab710ea757cfb39272c2f358f81a9 c57539346631a11245821f14de149c15ec949600 aidan-starke <starke.aidan@gmail.com> 1669062566 +1300	commit: `indent` -> `blankline`, refactor
+c57539346631a11245821f14de149c15ec949600 adde7a5be84724cc566221ce9a66d201abade3d1 aidan-starke <starke.aidan@gmail.com> 1669142143 +1300	commit: Update nightfox styles
+adde7a5be84724cc566221ce9a66d201abade3d1 f306f4ca7297619243f94bff601c305d0629728e aidan-starke <starke.aidan@gmail.com> 1669143581 +1300	commit: Disable stuff for large files
+f306f4ca7297619243f94bff601c305d0629728e 681b36d57cd0d2e6901796ae6f3d576e23be2244 aidan-starke <starke.aidan@gmail.com> 1669146462 +1300	commit: Add some visual mode remaps
+681b36d57cd0d2e6901796ae6f3d576e23be2244 02fbde3d9062e5bd1f39cd5b66b9ac3ead173b15 aidan-starke <starke.aidan@gmail.com> 1669233819 +1300	commit: PackerSync
+02fbde3d9062e5bd1f39cd5b66b9ac3ead173b15 3563c5de81b8c29160cd0297626ce73a9b2c45d1 aidan-starke <starke.aidan@gmail.com> 1669313023 +1300	commit (amend): PackerSync
+3563c5de81b8c29160cd0297626ce73a9b2c45d1 7c5753b1755bd914d2525f14e8a98bf81fd16c5d aidan-starke <starke.aidan@gmail.com> 1669365610 +1300	commit: Erroneous improvements
+7c5753b1755bd914d2525f14e8a98bf81fd16c5d 597e14034c20bdfcb449d9f70b5702dca549b78c aidan-starke <starke.aidan@gmail.com> 1669406219 +1300	commit (amend): Erroneous improvements
+597e14034c20bdfcb449d9f70b5702dca549b78c 6af91f00800f9c34b619e0b4fd641438400f5ac5 aidan-starke <starke.aidan@gmail.com> 1669603506 +1300	commit: Add `nvim-surround`
+6af91f00800f9c34b619e0b4fd641438400f5ac5 74ccfd14728ddf7ea63ed44f6cd20824c77fabeb aidan-starke <starke.aidan@gmail.com> 1669604920 +1300	commit: Remove unused plugins
+74ccfd14728ddf7ea63ed44f6cd20824c77fabeb f083996c7c32fc9f6fa13675a74f2574a30dc2f2 aidan-starke <starke.aidan@gmail.com> 1669605324 +1300	commit (amend): Remove unused plugins
+f083996c7c32fc9f6fa13675a74f2574a30dc2f2 0e8d8f30fed2ca2a64c0ad9745943c1c337e0134 aidan-starke <starke.aidan@gmail.com> 1669607189 +1300	commit: Telescope fuzzy finding
+0e8d8f30fed2ca2a64c0ad9745943c1c337e0134 43e23318677d5fcb0894834f82a32d08c6db7ef2 aidan-starke <starke.aidan@gmail.com> 1669613737 +1300	commit: Rainbow brackets
+43e23318677d5fcb0894834f82a32d08c6db7ef2 0e8d8f30fed2ca2a64c0ad9745943c1c337e0134 aidan-starke <starke.aidan@gmail.com> 1669613927 +1300	reset: moving to 0e8d8f30fed2ca2a64c0ad9745943c1c337e0134
+0e8d8f30fed2ca2a64c0ad9745943c1c337e0134 7c11b63efa15e734ae4857092ab6189ed93a1476 aidan-starke <starke.aidan@gmail.com> 1669614747 +1300	commit: Rainbow brackets
+7c11b63efa15e734ae4857092ab6189ed93a1476 688f83cc50f3c02cb3667f3baac376302c7c9cc1 aidan-starke <starke.aidan@gmail.com> 1669615266 +1300	commit (amend): Rainbow brackets
+688f83cc50f3c02cb3667f3baac376302c7c9cc1 5926d826838c1cf159b2e6cbd72fd114bb3f45d0 aidan-starke <starke.aidan@gmail.com> 1669693914 +1300	commit: PackerSync
+5926d826838c1cf159b2e6cbd72fd114bb3f45d0 ac1e68e0822a100398f643c9ca9c7d5e9642e9f9 aidan-starke <starke.aidan@gmail.com> 1669837968 +1300	commit (amend): PackerSync
+ac1e68e0822a100398f643c9ca9c7d5e9642e9f9 b303871ac47f9ca8468e1059cc66847a4137753a aidan-starke <starke.aidan@gmail.com> 1669838138 +1300	commit: Fix telescope fzf
+b303871ac47f9ca8468e1059cc66847a4137753a f3d6da0917dad460768b268ab388515781aaedbe aidan-starke <starke.aidan@gmail.com> 1670370095 +1300	commit (amend): Fix telescope fzf
+f3d6da0917dad460768b268ab388515781aaedbe deab300880826b88ce82c4f37d1d59fc842f5858 aidan-starke <starke.aidan@gmail.com> 1670370346 +1300	commit: PackerSync
