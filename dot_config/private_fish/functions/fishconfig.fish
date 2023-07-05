@@ -1,4 +1,4 @@
-function fishconfig --wraps='nv /Users/aidan/.config/fish/config.fish' --description 'alias fishconfig=nv /Users/aidan/.config/fish/config.fish'
-  nv /Users/aidan/.config/fish/config.fish $argv
+function fishconfig --wraps='nv /Users/aidan.starke/.config/fish' --description 'alias fishconfig=nv /Users/aidan.starke/.config/fish'
+  nv /Users/aidan.starke/.config/fish $argv
         
 end

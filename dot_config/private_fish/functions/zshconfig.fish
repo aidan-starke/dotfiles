@@ -1,4 +1,4 @@
-function zshconfig --wraps='nv /Users/aidan/.zshrc' --description 'alias zshconfig=nv /Users/aidan/.zshrc'
-  nv /Users/aidan/.zshrc $argv
+function zshconfig --wraps='nv /Users/aidan.starke/.zshrc' --description 'alias zshconfig=nv /Users/aidan.starke/.zshrc'
+  nv /Users/aidan.starke/.zshrc $argv
         
 end

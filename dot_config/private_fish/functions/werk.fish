@@ -1,4 +1,4 @@
-function werk --wraps='cd /Users/aidan/werk' --description 'alias werk=cd /Users/aidan/werk'
-  cd /Users/aidan/werk $argv
+function werk --wraps='cd /Users/aidan.starke/werk' --description 'alias werk=cd /Users/aidan.starke/werk'
+  cd /Users/aidan.starke/werk $argv
         
 end
