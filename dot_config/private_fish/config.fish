@@ -11,3 +11,7 @@ set PATH $PATH $HOME/.cargo/bin
 
 # CMake
 set PATH "/Applications/CMake.app/Contents/bin":"$PATH"
+
+export PATH="$PATH:/Users/aidan.starke/.foundry/bin"
+
+export PATH="$PATH:/Users/aidan.starke/.foundry/bin"
