@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 2555568e29d73bb86e88e01c45653223952231fa Aidan Starke <aidan@starkedev.net> 1760501304 +1300	clone: from https://github.com/aidan-starke/LazyNvim.git
+2555568e29d73bb86e88e01c45653223952231fa 74f0d70e265f4ac9e5f8913d638e999f8ec1056c Aidan Starke <aidan@starkedev.net> 1760517221 +1300	commit (amend): update plugins
+74f0d70e265f4ac9e5f8913d638e999f8ec1056c 2ff5cd20831f01d2e7cbcffd548c8437395be8b8 Aidan Starke <aidan@starkedev.net> 1760517227 +1300	commit: pin treesitter to v0.10.0
+2ff5cd20831f01d2e7cbcffd548c8437395be8b8 74f0d70e265f4ac9e5f8913d638e999f8ec1056c Aidan Starke <aidan@starkedev.net> 1760517593 +1300	rebase (start): checkout HEAD~2
+74f0d70e265f4ac9e5f8913d638e999f8ec1056c 173948c10740bab82e46e2856c2923077fffdedc Aidan Starke <aidan@starkedev.net> 1760517593 +1300	commit (amend): update plugins
+173948c10740bab82e46e2856c2923077fffdedc 3ec4b1acaef36bc8c3a96693c3dca9992a34947e Aidan Starke <aidan@starkedev.net> 1760517593 +1300	rebase (pick): pin treesitter to v0.10.0
+3ec4b1acaef36bc8c3a96693c3dca9992a34947e 3ec4b1acaef36bc8c3a96693c3dca9992a34947e Aidan Starke <aidan@starkedev.net> 1760517593 +1300	rebase (finish): returning to refs/heads/main
