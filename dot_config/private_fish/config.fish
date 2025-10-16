@@ -7,3 +7,7 @@ if status is-interactive
         exec tmux
     end
 end
+
+alias claude="/home/aidan/.claude/local/claude"
+set -gx PATH /home/aidan/.local/bin $PATH
+starship init fish | source
