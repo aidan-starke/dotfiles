@@ -68,5 +68,4 @@ git push
 
 - **hypr** config is automatically excluded on non-Linux systems via `.chezmoiignore`
 - **aerospace** and **sketchybar** configs are automatically excluded on non-macOS systems via `.chezmoiignore`
-- Fish config is marked private to prevent accidental exposure of sensitive data
 - All paths use `$HOME` for cross-platform compatibility
