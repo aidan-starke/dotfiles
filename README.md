@@ -4,11 +4,14 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
 ## Contents
 
-- **fish** - Fish shell configuration
-- **tmux** - Terminal multiplexer config
+- **fish** - Fish shell configuration with vim keybindings
+- **tmux** - Terminal multiplexer config with Tokyo Night theme
 - **neovim** - Neovim (LazyVim) configuration
 - **git** - Git aliases and settings
+- **starship** - Cross-shell prompt
 - **hypr** - Hyprland compositor config (Linux only)
+- **aerospace** - Window manager config (macOS only)
+- **sketchybar** - Status bar config (macOS only)
 
 ## Setup
 
@@ -24,7 +27,7 @@ yay -S chezmoi
 brew install chezmoi
 
 # Initialize from this repo
-chezmoi init https://github.com/YOUR_USERNAME/dotfiles.git
+chezmoi init https://github.com/aidan-starke/dotfiles.git
 
 # Preview changes
 chezmoi diff
@@ -64,4 +67,6 @@ git push
 ## Platform-Specific Notes
 
 - **hypr** config is automatically excluded on non-Linux systems via `.chezmoiignore`
+- **aerospace** and **sketchybar** configs are automatically excluded on non-macOS systems via `.chezmoiignore`
 - Fish config is marked private to prevent accidental exposure of sensitive data
+- All paths use `$HOME` for cross-platform compatibility
