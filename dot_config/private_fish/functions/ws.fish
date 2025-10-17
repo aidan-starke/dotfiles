@@ -1,3 +1,3 @@
-function ws --wraps='cd /home/aidan/workspace' --description 'alias ws=cd /home/aidan/workspace'
-    cd /home/aidan/workspace $argv
+function ws --wraps='cd $HOME/workspace' --description 'alias ws=cd $HOME/workspace'
+    cd $HOME/workspace $argv
 end
