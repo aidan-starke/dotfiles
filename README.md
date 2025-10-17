@@ -20,6 +20,9 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 Install chezmoi and apply dotfiles:
 
 ```bash
+# On macOS
+curl -fsSL https://raw.githubusercontent.com/aidan-starke/dotfiles/main/install-macos.sh | bash
+
 # On Arch Linux
 yay -S chezmoi
 
@@ -34,6 +37,9 @@ chezmoi diff
 
 # Apply dotfiles
 chezmoi apply
+
+# Open tmux and install plugins with: prefix + I
+# Open Neovim - lazy.nvim will install plugins, Mason will install LSPs
 ```
 
 ### Updating
