@@ -8,6 +8,6 @@ if status is-interactive
     end
 end
 
-alias claude="/home/aidan/.claude/local/claude"
-set -gx PATH /home/aidan/.local/bin $PATH
+alias claude="$HOME/.claude/local/claude"
+set -gx PATH $HOME/.local/bin $PATH
 starship init fish | source
