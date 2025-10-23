@@ -42,7 +42,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # Trigger sketchybar update when focus changes (e.g., when a window closes)
 on-focus-changed = [
-    'exec-and-forget /Users/jasontulp/dotfiles/.config/sketchybar/plugins/aerospace_focus_change.sh'
+    'exec-and-forget $HOME/.config/sketchybar/plugins/aerospace_focus_change.sh'
 ]
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
@@ -106,8 +106,8 @@ automatically-unhide-macos-hidden-apps = false
 
     # Quick Launch - Applications
     alt-enter = "exec-and-forget open -n /Applications/Ghostty.app"
-    alt-b = "exec-and-forget open -a 'Google Chrome'"
-    alt-shift-b = "exec-and-forget open -na 'Google Chrome' --args --incognito"
+    alt-b = "exec-and-forget open -a 'Brave Browser'"
+    alt-shift-b = "exec-and-forget open -na 'Brave Browser' --args --incognito"
     alt-m = "exec-and-forget open -a 'Spotify'"
     alt-n = "exec-and-forget open -a 'Cursor'"
 
