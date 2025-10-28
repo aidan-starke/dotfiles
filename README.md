@@ -32,6 +32,13 @@ brew install chezmoi
 # Initialize from this repo
 chezmoi init https://github.com/aidan-starke/dotfiles.git
 
+# Configure machine-specific settings
+# Create a data file for your GPG signing key
+cat > ~/.local/share/chezmoi/.chezmoidata.yaml << EOF
+git:
+  signingkey: "YOUR_GPG_KEY_ID_HERE"
+EOF
+
 # Preview changes
 chezmoi diff
 
@@ -41,6 +48,8 @@ chezmoi apply
 # Open tmux and install plugins with: prefix + I
 # Open Neovim - lazy.nvim will install plugins, Mason will install LSPs
 ```
+
+**Note**: To find your GPG signing key ID, run `gpg --list-secret-keys --keyid-format=long` and look for the key you want to use for signing commits.
 
 ### Updating
 
