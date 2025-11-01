@@ -1,4 +1,7 @@
 if status is-interactive
+    # Disable welcome greeting
+    set -g fish_greeting
+
     # Enable vim keybindings
     fish_vi_key_bindings
 
