@@ -4,7 +4,7 @@
 # percentage is passed to the script.
 
 if [ "$SENDER" = "volume_change" ]; then
-  VOLUME="$INFO"
+  VOLUME=" $INFO"
 
   case "$VOLUME" in
     [6-9][0-9]|100) ICON="󰕾"

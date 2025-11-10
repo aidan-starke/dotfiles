@@ -39,6 +39,12 @@ git:
   signingkey: "YOUR_GPG_KEY_ID_HERE"
 EOF
 
+# Create secrets file for API keys (not tracked in git)
+cat > ~/.config/fish/conf.d/secrets.fish << EOF
+# API Keys and Secrets
+set -gx ANTHROPIC_API_KEY your_key_here
+EOF
+
 # Preview changes
 chezmoi diff
 
@@ -50,6 +56,8 @@ chezmoi apply
 ```
 
 **Note**: To find your GPG signing key ID, run `gpg --list-secret-keys --keyid-format=long` and look for the key you want to use for signing commits.
+
+**Security Note**: API keys and secrets are stored in `~/.config/fish/conf.d/secrets.fish` which is excluded from version control via `.chezmoiignore`. You'll need to create this file manually on each machine.
 
 ### Updating
 
