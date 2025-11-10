@@ -5,6 +5,7 @@
 {{- if ne .chezmoi.os "darwin" }}
 .config/aerospace/
 .config/sketchybar/
+.config/alacritty/
 {{- end }}
 
 .config/fish/conf.d/secrets.fish
