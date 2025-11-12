@@ -1,6 +1,8 @@
+{{- if eq .chezmoi.os "darwin" }}
 # Ensure Homebrew bash is used for scripts (required for tokyo-night theme)
 set-environment -g PATH "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
 
+{{- end }}
 set -g @plugin 'tmux-plugins/tpm'
 
 set -g @plugin 'janoamaral/tokyo-night-tmux'
