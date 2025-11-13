@@ -1,0 +1,3 @@
+{{- if eq .chezmoi.os "linux"}}
+    set -gx PATH $HOME/.asdf/shims $PATH
+{{- end}}
