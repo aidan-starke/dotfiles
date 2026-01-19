@@ -103,47 +103,37 @@ automatically-unhide-macos-hidden-apps = false
     #     activate
     # end tell'
     # '''
+    alt-slash = 'layout tiles horizontal vertical'
+    alt-comma = 'layout accordion horizontal vertical'
 
     # Quick Launch - Applications
-    cmd-enter = "exec-and-forget open -a 'Alacritty'"
-    cmd-b = "exec-and-forget open -a 'Zen'"
+    alt-enter = "exec-and-forget open -a 'Alacritty'"
+    alt-shift-b = "exec-and-forget open -a 'Zen'"
 
     # Window Control
-    cmd-w = 'close'
-    cmd-f = 'fullscreen'
-
-    # Focus with arrow keys
-    cmd-left = 'focus left'
-    cmd-down = 'focus down'
-    cmd-up = 'focus up'
-    cmd-right = 'focus right'
-
-    # Move/Swap Windows with shift + arrow keys
-    cmd-shift-left = 'move left'
-    cmd-shift-down = 'move down'
-    cmd-shift-up = 'move up'
-    cmd-shift-right = 'move right'
+    alt-w = 'close'
+    alt-f = 'fullscreen'
 
     # Resize
-    cmd-minus = 'resize smart -50'
-    cmd-equal = 'resize smart +50'
-    cmd-shift-minus = 'resize smart -50'
-    cmd-shift-equal = 'resize smart +50'
+    alt-minus = 'resize smart -50'
+    alt-equal = 'resize smart +50'
+    alt-shift-minus = 'resize smart -50'
+    alt-shift-equal = 'resize smart +50'
 
     # Workspace switching
-    cmd-1 = 'workspace 1'
-    cmd-2 = 'workspace 2'
-    cmd-3 = 'workspace 3'
-    cmd-4 = 'workspace 4'
-    cmd-5 = 'workspace 5'
-    cmd-6 = 'workspace 6'
-    cmd-7 = 'workspace 7'
-    cmd-8 = 'workspace 8'
-    cmd-9 = 'workspace 9'
-    cmd-0 = 'workspace 10'
+    alt-1 = 'workspace 1'
+    alt-2 = 'workspace 2'
+    alt-3 = 'workspace 3'
+    alt-4 = 'workspace 4'
+    alt-5 = 'workspace 5'
+    alt-6 = 'workspace 6'
+    alt-7 = 'workspace 7'
+    alt-8 = 'workspace 8'
+    alt-9 = 'workspace 9'
+    alt-0 = 'workspace 10'
 
     # Workspace navigation
-    cmd-tab = 'workspace-back-and-forth'
+    alt-tab = 'workspace-back-and-forth'
 
     # Move window to workspace
     alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
@@ -156,8 +146,6 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
     alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
     alt-shift-0 = ['move-node-to-workspace 10', 'workspace 10']
-
-    cmd-shift-semicolon = 'mode X'
 
 # Window rules - automatically float certain windows
 # See: https://nikitabobko.github.io/AeroSpace/guide#on-window-detected
