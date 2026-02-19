@@ -5,12 +5,9 @@ if status is-interactive
     # Enable vim keybindings
     fish_vi_key_bindings
 
-    {{- if eq .chezmoi.os "linux"}}
-    # Auto-launch tmux if not already in tmux
     if not set -q TMUX
         exec tmux
     end
-    {{- end}}
 end
 
 set -gx PATH $HOME/.local/bin $PATH
