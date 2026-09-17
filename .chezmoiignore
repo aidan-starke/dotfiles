@@ -1,6 +1,14 @@
-{{- if ne .chezmoi.os "linux" }}
+{{- if not (and (hasKey . "hypr") .hypr) }}
 .config/hypr/
+.config/DankMaterialShell/
 {{- end }}
+# DMS regenerates these itself; only dms/binds.lua is hand-written
+.config/hypr/dms/cursor.lua
+.config/hypr/dms/layout.lua
+.config/hypr/dms/windowrules.lua
+.config/hypr/dms/colors.lua
+.config/hypr/dms/outputs.lua
+.config/git/
 
 {{- if ne .chezmoi.os "darwin" }}
 .config/aerospace/

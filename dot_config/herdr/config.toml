@@ -1,0 +1,46 @@
+onboarding = false
+# herdr configuration — migrated from ~/.tmux.conf
+# Reload a running server after edits with: herdr server reload-config
+
+[theme]
+# Was: janoamaral/tokyo-night-tmux (tpm plugin) — now a built-in theme.
+name = "tokyo-night"
+
+[terminal]
+# tmux config appended `-c "#{pane_current_path}"` to every split/new-window bind.
+# In herdr this is the default policy: new panes/tabs/workspaces inherit the
+# source pane's cwd. So those custom binds are no longer needed.
+new_cwd = "follow"
+
+[keys]
+# Prefix is ctrl+b by default (same as tmux) — no rebind needed.
+
+# tmux: bind C-x kill-pane
+close_pane = "prefix+ctrl+x"
+# tmux: bind C-o select-pane -t :.+   (cycle to next pane)
+cycle_pane_next = "prefix+o"
+# tmux: bind C-c new-window -c "#{pane_current_path}"   (herdr "tab" == tmux "window")
+new_tab = "prefix+ctrl+c"
+
+# Reorder panes. tmux swapped by pane index (prefix+{ = -U, prefix+} = -D);
+# herdr swaps spatially, so left/right suits a horizontal layout.
+# For stacked/vertical layouts use swap_pane_up / swap_pane_down instead.
+swap_pane_left  = "prefix+{"   # move pane earlier (tmux: prefix+{)
+swap_pane_right = "prefix+}"   # move pane later   (tmux: prefix+})
+
+# Splits keep herdr's defaults — tmux's `"` and `%` are punctuation chords that
+# don't bind reliably across terminals. Defaults (shown for reference):
+#   split_horizontal = "prefix+minus"   # stacked (top/bottom)  ~ tmux  "
+#   split_vertical   = "prefix+v"       # side-by-side          ~ tmux  %
+
+# Navigate-mode movement (the overlay opened by `goto`/workspace picker).
+# Panes already default to vim hjkl. Workspaces default to arrow up/down;
+# move them onto j/k for full vim-style navigation. Arrow keys still work too.
+# Note: pane down/up ALSO default to j/k, so these share those keys in the overlay.
+navigate_workspace_down = "j"
+navigate_workspace_up = "k"
+
+[ui]
+# Create new tabs (prefix+ctrl+c) instantly with an auto-generated name,
+# no name prompt. Matches tmux's `bind C-c new-window` which created immediately.
+prompt_new_tab_name = false

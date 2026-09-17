@@ -1,16 +1,18 @@
 # Disable welcome message
 set -g fish_greeting
 
+# Ensure ~/.local/bin is on PATH before the interactive block below
+# (herdr lives there and the auto-launch needs to resolve it).
+set -gx PATH $HOME/.local/bin $PATH
+
 if status is-interactive
     # Enable vim keybindings
     fish_vi_key_bindings
-
-    if not set -q TMUX
-        exec tmux
+    # Auto-launch herdr if not already inside a herdr pane
+    if not set -q HERDR_PANE_ID
+        exec herdr
     end
 end
-
-set -gx PATH $HOME/.local/bin $PATH
 
 # starship
 starship init fish | source

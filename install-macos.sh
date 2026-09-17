@@ -19,7 +19,6 @@ brew update
 # Core shell and terminal tools
 echo "Installing core shell and terminal tools..."
 brew install fish
-brew install tmux
 brew install starship
 
 # Version managers
@@ -63,15 +62,6 @@ brew install git-delta  # Better git diffs
 brew install lazygit  # Git TUI
 brew install fzf  # Fuzzy finder
 
-# Install TPM (Tmux Plugin Manager)
-echo "Installing Tmux Plugin Manager (TPM)..."
-if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
-    git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
-    echo "TPM installed. Run 'prefix + I' in tmux to install plugins"
-else
-    echo "TPM already installed"
-fi
-
 # Install Oh My Fish (optional but recommended for fish plugins)
 echo "Installing Oh My Fish..."
 if [ ! -d "$HOME/.local/share/omf" ]; then
@@ -98,7 +88,7 @@ echo "1. Install chezmoi: brew install chezmoi"
 echo "2. Initialize dotfiles: chezmoi init https://github.com/aidan-starke/dotfiles.git"
 echo "3. Preview changes: chezmoi diff"
 echo "4. Apply dotfiles: chezmoi apply"
-echo "5. Open tmux and press 'prefix + I' to install tmux plugins"
+echo "5. Install herdr to ~/.local/bin (fish auto-launches it)"
 echo "6. Open Neovim - lazy.nvim will install plugins, Mason will install LSPs"
 echo "7. Start Aerospace (it will auto-start on next login)"
 echo "8. Configure Sketchybar: brew services start sketchybar"
