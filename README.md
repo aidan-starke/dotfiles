@@ -5,7 +5,7 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 ## Contents
 
 - **fish** - Fish shell configuration with vim keybindings
-- **herdr** - Terminal multiplexer config with Tokyo Night theme (auto-launched by fish)
+- **herdr** - Terminal multiplexer config with Tokyo Night theme
 - **neovim** - lives in its own repo: [aidan-starke/LazyNvim](https://github.com/aidan-starke/LazyNvim) (clone to `~/.config/nvim`)
 - **git** - Git aliases and settings
 - **starship** - Cross-shell prompt
@@ -26,7 +26,7 @@ Install these before running `chezmoi apply`. Everything here is referenced dire
 | git + gpg | `git/config` signs commits with the key in `[data.git] signingkey` |
 | [fish](https://fishshell.com/) | shell; `config.fish` runs on every login |
 | [starship](https://starship.rs/) | prompt, initialised by `config.fish` |
-| [herdr](https://herdr.dev/) at `~/.local/bin/herdr` | terminal multiplexer; fish `exec`s it on every interactive shell, so a missing binary breaks login shells |
+| [herdr](https://herdr.dev/) at `~/.local/bin/herdr` | terminal multiplexer, launched manually with `herdr` |
 | [neovim](https://neovim.io/) | the `nv` fish function wraps it; config is a separate repo, see below |
 | [asdf](https://asdf-vm.com/) (Linux) | `conf.d/asdf.fish` adds `~/.asdf/shims` to `PATH`; plugins in use are `nodejs`, `golang`, `bun` |
 | [bun](https://bun.sh/) | `config.fish` adds `~/.bun/bin` to `PATH` |
@@ -107,7 +107,7 @@ chezmoi apply
 # Neovim config (separate repo, not managed by chezmoi)
 git clone git@github.com:aidan-starke/LazyNvim.git ~/.config/nvim
 
-# Make sure herdr is installed at ~/.local/bin/herdr (fish auto-launches it)
+# Install herdr to ~/.local/bin/herdr and run `herdr` to start a session
 # Open Neovim - lazy.nvim will install plugins, Mason will install LSPs (needs ripgrep, fd, a C compiler for tree-sitter)
 ```
 
