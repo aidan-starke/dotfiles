@@ -20,10 +20,11 @@ brew update
 echo "Installing core shell and terminal tools..."
 brew install fish
 brew install starship
+brew install --cask alacritty
 
 # Version managers
 echo "Installing version managers..."
-brew install fnm  # Fast Node Manager
+brew install asdf  # version manager (nodejs, golang, bun plugins)
 
 # Editor
 echo "Installing Neovim..."
@@ -33,6 +34,7 @@ brew install neovim
 echo "Installing window manager and status bar..."
 brew install --cask nikitabobko/tap/aerospace
 brew install sketchybar
+brew install jq  # used by sketchybar plugin scripts
 brew install --cask sf-symbols  # For sketchybar icons
 
 # Git
@@ -89,6 +91,7 @@ echo "2. Initialize dotfiles: chezmoi init https://github.com/aidan-starke/dotfi
 echo "3. Preview changes: chezmoi diff"
 echo "4. Apply dotfiles: chezmoi apply"
 echo "5. Install herdr to ~/.local/bin (fish auto-launches it)"
-echo "6. Open Neovim - lazy.nvim will install plugins, Mason will install LSPs"
-echo "7. Start Aerospace (it will auto-start on next login)"
-echo "8. Configure Sketchybar: brew services start sketchybar"
+echo "6. Clone Neovim config: git clone git@github.com:aidan-starke/LazyNvim.git ~/.config/nvim"
+echo "7. Open Neovim - lazy.nvim will install plugins, Mason will install LSPs"
+echo "8. Start Aerospace (it will auto-start on next login)"
+echo "9. Configure Sketchybar: brew services start sketchybar"
