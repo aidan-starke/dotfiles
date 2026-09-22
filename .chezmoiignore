@@ -20,3 +20,10 @@
 .config/fish/fish_variables
 README.md
 install-macos.sh
+
+# Claude Code: statusline.sh is the only hand-written file here.
+# Everything else is credentials, session state, or machine-local caches.
+.claude/*
+!.claude/statusline.sh
+.claude-work/
+.claude.json

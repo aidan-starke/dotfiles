@@ -19,8 +19,7 @@ set --export PATH $BUN_INSTALL/bin $PATH
 set --export PATH /usr/bin/go $PATH
 set --export PATH $HOME/go/bin $PATH
 
-# claude migrated
-alias claude="$HOME/.local/bin/claude"
+# claude: account profiles live in ~/.config/fish/functions/{claude,wclaude,pclaude}.fish
 
 {{- if eq .chezmoi.os "darwin" }}
 # pip3 (macOS)
