@@ -28,6 +28,7 @@ Install these before running `chezmoi apply`. Everything here is referenced dire
 | [starship](https://starship.rs/) | prompt, initialised by `config.fish` |
 | [herdr](https://herdr.dev/) at `~/.local/bin/herdr` | terminal multiplexer, launched manually with `herdr` |
 | [neovim](https://neovim.io/) | the `nv` fish function wraps it; config is a separate repo, see below |
+| [lazygit](https://github.com/jesseduffield/lazygit) | LazyVim opens it with `<leader>gg`; on Linux `go install github.com/jesseduffield/lazygit@latest` then `asdf reshim golang` |
 | [asdf](https://asdf-vm.com/) (Linux) | `conf.d/asdf.fish` adds `~/.asdf/shims` to `PATH`; plugins in use are `nodejs`, `golang`, `bun` |
 | [bun](https://bun.sh/) | `config.fish` adds `~/.bun/bin` to `PATH` |
 | go | `config.fish` adds `~/go/bin` to `PATH` |
@@ -62,7 +63,8 @@ paru -S zen-browser-bin
 | `sketchybar`, `sf-symbols` (cask), `jq` | status bar; the plugin scripts shell out to `jq` |
 | `alacritty` | terminal config in `alacritty/` |
 | `ripgrep`, `fd`, `tree-sitter` | Neovim telescope/treesitter |
-| `git-delta`, `lazygit`, `fzf` | optional CLI niceties |
+| `lazygit` | Neovim `<leader>gg`, see above |
+| `git-delta`, `fzf` | optional CLI niceties |
 
 ## Setup
 
@@ -106,6 +108,9 @@ chezmoi apply
 
 # Neovim config (separate repo, not managed by chezmoi)
 git clone git@github.com:aidan-starke/LazyNvim.git ~/.config/nvim
+
+# Use Neovim for commit messages (git config is not managed by chezmoi)
+git config --global core.editor nvim
 
 # Install herdr to ~/.local/bin/herdr and run `herdr` to start a session
 # Open Neovim - lazy.nvim will install plugins, Mason will install LSPs (needs ripgrep, fd, a C compiler for tree-sitter)
