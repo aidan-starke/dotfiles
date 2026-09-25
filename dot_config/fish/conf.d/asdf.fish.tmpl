@@ -1,3 +1,9 @@
 {{- if eq .chezmoi.os "linux"}}
     set -gx PATH $HOME/.asdf/shims $PATH
 {{- end}}
+{{- if eq .chezmoi.os "darwin"}}
+# asdf version manager (Homebrew install ships its own fish integration)
+if test -f /opt/homebrew/opt/asdf/libexec/asdf.fish
+    source /opt/homebrew/opt/asdf/libexec/asdf.fish
+end
+{{- end}}
