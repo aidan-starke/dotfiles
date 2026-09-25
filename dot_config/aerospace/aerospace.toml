@@ -173,6 +173,11 @@ run = 'layout floating'
 if.app-id = 'com.apple.SystemSettings'
 run = 'layout floating'
 
+# FaceTime (doesn't behave well when tiled)
+[[on-window-detected]]
+if.app-id = 'com.apple.FaceTime'
+run = 'layout floating'
+
 # Preferences/Settings windows
 [[on-window-detected]]
 if.window-title-regex-substring = 'Preferences'
